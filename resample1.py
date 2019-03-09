@@ -1,6 +1,6 @@
 #coding:utf-8
 
-# resample to 16Khz sampling 
+# resample wav to 16Khz sampling 
 
 import os
 import argparse

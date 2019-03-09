@@ -319,7 +319,7 @@ class Class_get_fp(object):
 			index0=loop
 		else:
 			index0=self.frame_num
-		plt.title('no. ' + str(index0) + ': frequency response')
+		plt.title('frame no. ' + str(index0) + ': frequency response')
 		plt.xlabel('Frequency [Hz]')
 		plt.ylabel('Amplitude [dB]')
 		ax1.plot(np.arange(len(spec_out)) * df0, spec_out, 'b', ms=2)

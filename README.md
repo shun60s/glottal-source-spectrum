@@ -26,7 +26,7 @@ python3 get_fp4.py -w wav-file-name(mono,16bit) -f frame-number
 ![figure3](docs/formant_and_Q-3dB_points.png)  
 
 
-resampling to 16Khz sampling  
+resampling wav to 16Khz sampling  
 ```
 python resample1.py -w wav-file-name(mono,16bit)  
 ```
