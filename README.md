@@ -2,6 +2,8 @@
 
 A trial estimation of glottal source spectrum by anti-formant filter and inverse radiation filter.  
 
+[github repository](https://github.com/shun60s/glottal-source-spectrum/)  
+
 ## contents  
 
 some frequency response  samples of pseudo glottal source waveform  
