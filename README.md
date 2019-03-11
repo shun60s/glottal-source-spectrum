@@ -32,6 +32,17 @@ peaking filter class to drop formant boost portion, anti-formant filter
 iir_peaking1.py
 ```
 
+estimate of glottal source spectrum condition by anti-formant filter and inverse radiation filter  
+```
+examples:
+  vowel /a/        : python3 est_gss1.py -w a_1-16k.wav  -f 3 -g 1  
+  nasal voice /na/ : python3 est_gss1.py -w na_1-16k.wav -f 8 -g 2  
+```
+![figure4](docs/inverse_filter_output_a_3.png)  
+
+glottal source spectrum condition  
+![figure5](docs/source_frequecny_response_a_3.png)  
+
 
 resampling wav to 16Khz sampling  
 ```

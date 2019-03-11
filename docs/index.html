@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>glottal source spectrum   </title>
+<meta name="description" content="A trial estimation of glottal source spectrum by anti-formant filter and inverse radiation filter." />
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-lg px-3 my-5 markdown-body">
+<h1>glottal source spectrum   </h1>
+
+<p>A trial estimation of glottal source spectrum by anti-formant filter and inverse radiation filter.<br /></p>
+
+<p><a href="https://github.com/shun60s/glottal-source-spectrum/">github repository</a><br /></p>
+
+<h2>contents  </h2>
+
+<p>some frequency response  samples of pseudo glottal source waveform<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python3 glottal2mass.py
+</code></pre></div></div>
+<p><img src="glottalwaves2freqres.png" alt="figure1" > </p>
+
+
+<p>estimate formant peak frequency and Q factor based on LPC analysis<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python3 get_fp4.py -w wav-file-name(mono,16bit) -f frame-number
+</code></pre></div></div>
+<p><img src="formant_and_Q-3dB_points-a-3.png" alt="figure2" ><br /></p>
+
+
+<p>get a low shelving filter as inverse filter against high pass filter that simulates radiation from mouth<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python3 iir_LowShelving1.py
+</code></pre></div></div>
+<p><img src="lowShelving2HPF.png" alt="figure3" ><br /></p>
+
+<br />
+<p>peaking filter class to drop formant boost portion, anti-formant filter<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+iir_peaking1.py
+</code></pre></div></div>
+
+<p>estimate of glottal source spectrum condition by anti-formant filter and inverse radiation filter<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+examples:
+  vowel /a/        : python3 est_gss1.py -w a_1-16k.wav  -f 3 -g 1<br />
+  nasal voice /na/ : python3 est_gss1.py -w na_1-16k.wav -f 8 -g 2<br />
+</code></pre></div></div>
+<p><img src="inverse_filter_output_a_3.png" alt="figure4" ><br />
+
+<p>glottal source spectrum condition<br /></p>
+<img src="source_frequecny_response_a_3.png" alt="figure5" ><br /></p>
+<br />
+
+<p>resampling wav to 16Khz sampling<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python resample1.py -w wav-file-name(mono,16bit)<br />
+</code></pre></div></div>
+
+
+<h2>License    </h2>
+<p>MIT<br />
+except LPC.py<br /></p>
+
+</div>
+</body>
+</html>
