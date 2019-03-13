@@ -1,11 +1,11 @@
 #coding:utf-8
 
-# trial estimation of glottal source spectrum condition by anti-formant filter and inverse radiation filter 
+# trial estimation of glottal source spectrum condition by inverse radiation filter and anti-formant filter
 # under following hypotheses.
-#  (1) glottal source spectrum characterizes descending rightwards without sharp peak.
-#  (2) resonance strength of formant is roughly same regardless of formant frequency.
+#  (1) glottal source spectrum (frequency response) characterizes simply descending rightwards without sharp peak.
+#  (2) resonance strength of formant is roughly same level, regardless of formant frequency.
 
-#　声門の音源スペクトルは　険しいピークがない右肩下がりの特性である
+#　声門の音源の周波数特性（スペクトル）は　険しいピークがない右肩下がりの特性である
 #  フォルマントの共鳴の強さは周波数によらず同じ程度である
 #  の仮説のもと、
 #  口の放射特性の逆フィルターとフォルマント周波数で減衰するフィルターを使って

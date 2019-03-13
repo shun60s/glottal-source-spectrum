@@ -95,17 +95,6 @@ class Class_IIR_Peaking1(object):
 if __name__ == '__main__':
     
     # Drop sample 
-    iir_pk1=Class_IIR_Peaking1(fpeak=1000, gain=0.1, Q=5.0)
-    # draw frequency response
-    iir_pk1.f_show()
-    
-    
-    # Drop sample 
-    iir_pk1=Class_IIR_Peaking1(fpeak=1000, gain=0.1, Q=10.0)
-    # draw frequency response
-    iir_pk1.f_show()
-
-    # Drop sample 
-    iir_pk1=Class_IIR_Peaking1(fpeak=1000, gain=0.1, Q=20.0)
+    iir_pk1=Class_IIR_Peaking1(fpeak=1140, gain=0.1, Q=8.4)
     # draw frequency response
     iir_pk1.f_show()

@@ -49,6 +49,12 @@ resampling wav to 16Khz sampling
 python resample1.py -w wav-file-name(mono,16bit)  
 ```
 
+  
+## Document  
+
+For more information, please see [related WEB](https://wsignal.sakura.ne.jp/onsei2007/glottal-spectrum-e.html) or 
+[same content in Japanese](https://wsignal.sakura.ne.jp/onsei2007/glottal-spectrum.html)  
+
 
 ## License    
 MIT  
