@@ -46,7 +46,7 @@ glottal source spectrum condition
 
 resampling wav to 16Khz sampling  
 ```
-python resample1.py -w wav-file-name(mono,16bit)  
+python3 resample1.py -w wav-file-name(mono,16bit)  
 ```
 
   
